@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Original sprites created by discord:IAmRasputin#5242. Vox states by Flareguy for Space Station 14. Ears overlayed by github:hiucko",
+  "copyright": "Original sprites created by discord:IAmRasputin#5242. Ears overlayed by github:hiucko. Unshaded overlay by github:hiucko",
   "size": {
     "x": 32,
     "y": 32
@@ -14,6 +14,9 @@
       "name": "icon-flash"
     },
     {
+      "name": "icon-unshaded"
+    },
+    {
       "name": "off-equipped-HELMET",
       "directions": 4
     },
@@ -22,11 +25,7 @@
       "directions": 4
     },
     {
-      "name": "off-equipped-HELMET-vox",
-      "directions": 4
-    },
-    {
-      "name": "on-equipped-HELMET-vox",
+      "name": "full-glow",
       "directions": 4
     }
   ]

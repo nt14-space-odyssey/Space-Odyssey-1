@@ -1,12 +1,3 @@
-#- type: entity
-#  parent: ClothingHeadHelmetHardsuitSyndie
-#  id: ClothingHeadHelmetHardsuitSyndiecat
-#  name: blood-red hardsuit helmet with cat ears
-#  description: A heavily armored helmet designed for work in special operations. Property of Gorlex Marauders. Now with toggleable cat ears >w<
-#  components:
-#  - type: ToggleableClothing
-#    clothingPrototype: ClothingHeadHelmetHardsuitSyndiecatears
-
 - type: entity
   parent: ClothingHeadHelmetHardsuitSyndie
   id: ClothingHeadHelmetHardsuitSyndiecatears
@@ -15,7 +6,19 @@
   components:
   - type: Sprite
     sprite: _Odyssey/Clothing/Head/Hardsuits/syndicat.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _Odyssey/Clothing/Head/Hardsuits/syndicat.rsi
- # - type: ToggleableClothing
- #   clothingPrototype: ClothingHeadHelmetHardsuitSyndiecat
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET #will remove glowing body later
+      - state: full-glow
+        shader: unshaded

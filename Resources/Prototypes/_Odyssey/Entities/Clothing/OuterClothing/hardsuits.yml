@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband, ClothingOuterHardsuitSyndie ]
+  id: ClothingOuterHardsuitSyndiecat
+  name: blood-red hardsuit with modified helmet
+  description: A heavily armored hardsuit designed for work in special operations. Property of Gorlex Marauders. Helmet includes ears
+  components:
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSyndiecatears
+  - type: Tag
+    tags:
+    - Hardsuit

@@ -1030,8 +1030,6 @@ entities:
     fixedRotation: False
     bodyType: Dynamic
     type: Physics
-  - fixtures: []
-    type: Fixtures
   - gravityShakeSound: !type:SoundPathSpecifier
       path: /Audio/Effects/alert.ogg
     type: Gravity
@@ -12240,12 +12238,6 @@ entities:
     pos: 1.5,21.5
     parent: 127
     type: Transform
-- uid: 314
-  type: VehicleKeyPussyWagon
-  components:
-  - pos: 7.4941626,-12.513269
-    parent: 127
-    type: Transform
 - uid: 315
   type: WallSolid
   components:
@@ -13639,32 +13631,6 @@ entities:
   - pos: -5.5,-3.5
     parent: 127
     type: Transform
-- uid: 529
-  type: BlastDoor
-  components:
-  - pos: -13.5,5.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 678
-    type: SignalReceiver
-- uid: 530
-  type: BlastDoor
-  components:
-  - pos: -13.5,9.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 679
-    type: SignalReceiver
 - uid: 531
   type: WindowReinforcedDirectional
   components:
@@ -13727,7 +13693,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 541
-  type: WindoorScienceLocked
+  type: WindoorSecureScienceLocked
   components:
   - pos: 6.5,-0.5
     parent: 127
@@ -14062,28 +14028,6 @@ entities:
   - pos: -8.5,-2.5
     parent: 127
     type: Transform
-- uid: 596
-  type: MachineArtifactAnalyzer
-  components:
-  - pos: -11.5,5.5
-    parent: 127
-    type: Transform
-  - inputs:
-      ArtifactAnalyzerReceiver:
-      - port: ArtifactAnalyzerSender
-        uid: 597
-    type: SignalReceiver
-- uid: 597
-  type: ComputerAnalysisConsole
-  components:
-  - pos: -11.5,2.5
-    parent: 127
-    type: Transform
-  - outputs:
-      ArtifactAnalyzerSender:
-      - port: ArtifactAnalyzerReceiver
-        uid: 596
-    type: SignalTransmitter
 - uid: 598
   type: ReinforcedWindow
   components:
@@ -14138,18 +14082,6 @@ entities:
   type: chem_master
   components:
   - pos: 7.5,6.5
-    parent: 127
-    type: Transform
-- uid: 607
-  type: chem_dispenser
-  components:
-  - pos: 7.5,5.5
-    parent: 127
-    type: Transform
-- uid: 608
-  type: chem_dispenser
-  components:
-  - pos: 6.5,7.5
     parent: 127
     type: Transform
 - uid: 609
@@ -14492,14 +14424,14 @@ entities:
     - 5651
     type: DeviceList
 - uid: 657
-  type: WindoorScienceLocked
+  type: WindoorSecureScienceLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: -10.5,5.5
     parent: 127
     type: Transform
 - uid: 658
-  type: WindoorScienceLocked
+  type: WindoorSecureScienceLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: -10.5,9.5
@@ -14628,28 +14560,6 @@ entities:
   - pos: 3.5705032,-1.1707816
     parent: 127
     type: Transform
-- uid: 678
-  type: SignalButton
-  components:
-  - pos: -9.5,3.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 529
-    type: SignalTransmitter
-- uid: 679
-  type: SignalButton
-  components:
-  - pos: -9.5,7.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 530
-    type: SignalTransmitter
 - uid: 680
   type: PottedPlantRandom
   components:
@@ -14788,7 +14698,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 700
-  type: WindoorChemistryLocked
+  type: WindoorSecureChemistryLocked
   components:
   - rot: 3.141592653589793 rad
     pos: 6.5,3.5
@@ -14980,8 +14890,6 @@ entities:
   - pos: 5.5,5.5
     parent: 127
     type: Transform
-  - fixtures: []
-    type: Fixtures
 - uid: 731
   type: WallReinforced
   components:
@@ -15289,7 +15197,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 781
-  type: WindoorMedicalLocked
+  type: WindoorSecureMedicalLocked
   components:
   - pos: -1.5,22.5
     parent: 127
@@ -15540,8 +15448,6 @@ entities:
   - pos: 2.5,15.5
     parent: 127
     type: Transform
-  - fixtures: []
-    type: Fixtures
 - uid: 822
   type: RandomSpawner
   components:
@@ -17789,58 +17695,6 @@ entities:
   - pos: 20.5,22.5
     parent: 127
     type: Transform
-- uid: 1187
-  type: BlastDoor
-  components:
-  - pos: 16.5,22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 1196
-    type: SignalReceiver
-- uid: 1188
-  type: BlastDoor
-  components:
-  - pos: 16.5,25.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 1196
-    type: SignalReceiver
-- uid: 1189
-  type: BlastDoor
-  components:
-  - pos: 20.5,25.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 1196
-    type: SignalReceiver
-- uid: 1190
-  type: BlastDoor
-  components:
-  - pos: 20.5,22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 1196
-    type: SignalReceiver
 - uid: 1191
   type: AirlockExternalGlassLocked
   components:
@@ -17860,89 +17714,18 @@ entities:
   - rot: 3.141592653589793 rad
     pos: 19.5,25.5
     parent: 127
-    type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 1194
   type: AirlockExternalGlassShuttleLocked
   components:
   - rot: 3.141592653589793 rad
     pos: 17.5,25.5
     parent: 127
-    type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 1195
   type: AirlockExternalGlassLocked
   components:
   - pos: 19.5,22.5
     parent: 127
     type: Transform
-- uid: 1196
-  type: SignalButton
-  components:
-  - pos: 18.5,22.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 1187
-      - port: Toggle
-        uid: 1190
-      - port: Toggle
-        uid: 1189
-      - port: Toggle
-        uid: 1188
-    type: SignalTransmitter
 - uid: 1197
   type: AirlockMaintSalvageLocked
   components:
@@ -18570,7 +18353,7 @@ entities:
       paper_label: !type:ContainerSlot {}
     type: ContainerContainer
 - uid: 1287
-  type: AMEPart
+  type: AmePartFlatpack
   components:
   - flags: InContainer
     type: MetaData
@@ -18579,7 +18362,7 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1288
-  type: AMEPart
+  type: AmePartFlatpack
   components:
   - flags: InContainer
     type: MetaData
@@ -18588,7 +18371,7 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1289
-  type: AMEPart
+  type: AmePartFlatpack
   components:
   - flags: InContainer
     type: MetaData
@@ -18597,7 +18380,7 @@ entities:
   - canCollide: False
     type: Physics
 - uid: 1290
-  type: AMEController
+  type: AmeController
   components:
   - pos: 37.5,12.5
     parent: 127
@@ -19980,14 +19763,14 @@ entities:
     parent: 127
     type: Transform
 - uid: 1516
-  type: WindoorCommandLocked
+  type: WindoorSecureCommandLocked
   components:
   - rot: -1.5707963267948966 rad
     pos: 55.5,-3.5
     parent: 127
     type: Transform
 - uid: 1517
-  type: WindoorCommandLocked
+  type: WindoorSecureCommandLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 57.5,-3.5
@@ -22684,35 +22467,6 @@ entities:
   - pos: 44.5,-7.5
     parent: 127
     type: Transform
-- uid: 1954
-  type: TwoWayLever
-  components:
-  - pos: 14.5,6.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 1994
-      - port: Forward
-        uid: 1995
-      - port: Forward
-        uid: 1996
-      Right:
-      - port: Reverse
-        uid: 1994
-      - port: Reverse
-        uid: 1995
-      - port: Reverse
-        uid: 1996
-      Middle:
-      - port: Off
-        uid: 1994
-      - port: Off
-        uid: 1995
-      - port: Off
-        uid: 1996
-    type: SignalTransmitter
 - uid: 1955
   type: WallSolid
   components:
@@ -22871,576 +22625,6 @@ entities:
   - pos: 22.5,21.5
     parent: 127
     type: Transform
-- uid: 1977
-  type: ConveyorBelt
-  components:
-  - pos: 16.5,21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1999
-      Forward:
-      - port: Left
-        uid: 1999
-      Off:
-      - port: Middle
-        uid: 1999
-    type: SignalReceiver
-- uid: 1978
-  type: ConveyorBelt
-  components:
-  - pos: 16.5,22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1999
-      Forward:
-      - port: Left
-        uid: 1999
-      Off:
-      - port: Middle
-        uid: 1999
-    type: SignalReceiver
-- uid: 1979
-  type: ConveyorBelt
-  components:
-  - pos: 16.5,23.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1999
-      Forward:
-      - port: Left
-        uid: 1999
-      Off:
-      - port: Middle
-        uid: 1999
-    type: SignalReceiver
-- uid: 1980
-  type: ConveyorBelt
-  components:
-  - pos: 16.5,24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1999
-      Forward:
-      - port: Left
-        uid: 1999
-      Off:
-      - port: Middle
-        uid: 1999
-    type: SignalReceiver
-- uid: 1981
-  type: ConveyorBelt
-  components:
-  - pos: 16.5,25.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1999
-      Forward:
-      - port: Left
-        uid: 1999
-      Off:
-      - port: Middle
-        uid: 1999
-    type: SignalReceiver
-- uid: 1982
-  type: ConveyorBelt
-  components:
-  - pos: 20.5,21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 2000
-      Forward:
-      - port: Left
-        uid: 2000
-      Off:
-      - port: Middle
-        uid: 2000
-    type: SignalReceiver
-- uid: 1983
-  type: ConveyorBelt
-  components:
-  - pos: 20.5,22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 2000
-      Forward:
-      - port: Left
-        uid: 2000
-      Off:
-      - port: Middle
-        uid: 2000
-    type: SignalReceiver
-- uid: 1984
-  type: ConveyorBelt
-  components:
-  - pos: 20.5,23.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 2000
-      Forward:
-      - port: Left
-        uid: 2000
-      Off:
-      - port: Middle
-        uid: 2000
-    type: SignalReceiver
-- uid: 1985
-  type: ConveyorBelt
-  components:
-  - pos: 20.5,24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 2000
-      Forward:
-      - port: Left
-        uid: 2000
-      Off:
-      - port: Middle
-        uid: 2000
-    type: SignalReceiver
-- uid: 1986
-  type: ConveyorBelt
-  components:
-  - pos: 20.5,25.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 2000
-      Forward:
-      - port: Left
-        uid: 2000
-      Off:
-      - port: Middle
-        uid: 2000
-    type: SignalReceiver
-- uid: 1987
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,16.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1988
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,15.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1989
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,14.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1990
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,13.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1991
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,12.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1992
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,11.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1993
-  type: ConveyorBelt
-  components:
-  - pos: 14.5,10.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1998
-      - port: Right
-        uid: 1997
-      Forward:
-      - port: Left
-        uid: 1998
-      - port: Left
-        uid: 1997
-      Off:
-      - port: Middle
-        uid: 1998
-      - port: Middle
-        uid: 1997
-    type: SignalReceiver
-- uid: 1994
-  type: ConveyorBelt
-  components:
-  - pos: 13.5,6.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1954
-      Forward:
-      - port: Left
-        uid: 1954
-      Off:
-      - port: Middle
-        uid: 1954
-    type: SignalReceiver
-- uid: 1995
-  type: ConveyorBelt
-  components:
-  - pos: 13.5,5.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1954
-      Forward:
-      - port: Left
-        uid: 1954
-      Off:
-      - port: Middle
-        uid: 1954
-    type: SignalReceiver
-- uid: 1996
-  type: ConveyorBelt
-  components:
-  - pos: 13.5,4.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 1954
-      Forward:
-      - port: Left
-        uid: 1954
-      Off:
-      - port: Middle
-        uid: 1954
-    type: SignalReceiver
-- uid: 1997
-  type: TwoWayLever
-  components:
-  - pos: 15.5,9.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 1993
-      - port: Forward
-        uid: 1992
-      - port: Forward
-        uid: 1991
-      - port: Forward
-        uid: 1990
-      - port: Forward
-        uid: 1989
-      - port: Forward
-        uid: 1988
-      - port: Forward
-        uid: 1987
-      Right:
-      - port: Reverse
-        uid: 1993
-      - port: Reverse
-        uid: 1992
-      - port: Reverse
-        uid: 1991
-      - port: Reverse
-        uid: 1990
-      - port: Reverse
-        uid: 1989
-      - port: Reverse
-        uid: 1988
-      - port: Reverse
-        uid: 1987
-      Middle:
-      - port: Off
-        uid: 1993
-      - port: Off
-        uid: 1992
-      - port: Off
-        uid: 1991
-      - port: Off
-        uid: 1990
-      - port: Off
-        uid: 1989
-      - port: Off
-        uid: 1988
-      - port: Off
-        uid: 1987
-    type: SignalTransmitter
-- uid: 1998
-  type: TwoWayLever
-  components:
-  - pos: 15.5,17.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 1987
-      - port: Forward
-        uid: 1988
-      - port: Forward
-        uid: 1989
-      - port: Forward
-        uid: 1990
-      - port: Forward
-        uid: 1991
-      - port: Forward
-        uid: 1992
-      - port: Forward
-        uid: 1993
-      Right:
-      - port: Reverse
-        uid: 1987
-      - port: Reverse
-        uid: 1988
-      - port: Reverse
-        uid: 1989
-      - port: Reverse
-        uid: 1990
-      - port: Reverse
-        uid: 1991
-      - port: Reverse
-        uid: 1992
-      - port: Reverse
-        uid: 1993
-      Middle:
-      - port: Off
-        uid: 1987
-      - port: Off
-        uid: 1988
-      - port: Off
-        uid: 1989
-      - port: Off
-        uid: 1990
-      - port: Off
-        uid: 1991
-      - port: Off
-        uid: 1992
-      - port: Off
-        uid: 1993
-    type: SignalTransmitter
-- uid: 1999
-  type: TwoWayLever
-  components:
-  - pos: 15.5,21.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 1977
-      - port: Forward
-        uid: 1978
-      - port: Forward
-        uid: 1979
-      - port: Forward
-        uid: 1980
-      - port: Forward
-        uid: 1981
-      Right:
-      - port: Reverse
-        uid: 1977
-      - port: Reverse
-        uid: 1978
-      - port: Reverse
-        uid: 1979
-      - port: Reverse
-        uid: 1980
-      - port: Reverse
-        uid: 1981
-      Middle:
-      - port: Off
-        uid: 1977
-      - port: Off
-        uid: 1978
-      - port: Off
-        uid: 1979
-      - port: Off
-        uid: 1980
-      - port: Off
-        uid: 1981
-    type: SignalTransmitter
-- uid: 2000
-  type: TwoWayLever
-  components:
-  - pos: 20.5,19.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 1982
-      - port: Forward
-        uid: 1983
-      - port: Forward
-        uid: 1984
-      - port: Forward
-        uid: 1985
-      - port: Forward
-        uid: 1986
-      Right:
-      - port: Reverse
-        uid: 1982
-      - port: Reverse
-        uid: 1983
-      - port: Reverse
-        uid: 1984
-      - port: Reverse
-        uid: 1985
-      - port: Reverse
-        uid: 1986
-      Middle:
-      - port: Off
-        uid: 1982
-      - port: Off
-        uid: 1983
-      - port: Off
-        uid: 1984
-      - port: Off
-        uid: 1985
-      - port: Off
-        uid: 1986
-    type: SignalTransmitter
 - uid: 2001
   type: OxygenCanister
   components:
@@ -25272,32 +24456,6 @@ entities:
     pos: 65.5,-36.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 2283
   type: Poweredlight
   components:
@@ -25496,32 +24654,6 @@ entities:
     pos: 65.5,-34.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 2312
   type: WallReinforced
   components:
@@ -25560,32 +24692,6 @@ entities:
     pos: 65.5,-26.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 2318
   type: CableMV
   components:
@@ -29165,8 +28271,6 @@ entities:
   - pos: 6.5,-13.5
     parent: 127
     type: Transform
-  - fixtures: []
-    type: Fixtures
 - uid: 2897
   type: MopItem
   components:
@@ -29300,20 +28404,12 @@ entities:
   - pos: 13.5,-10.5
     parent: 127
     type: Transform
-  - fixtures: []
-    type: Fixtures
 - uid: 2919
   type: VendingMachineJaniDrobe
   components:
   - flags: SessionSpecific
     type: MetaData
   - pos: 6.5,-12.5
-    parent: 127
-    type: Transform
-- uid: 2920
-  type: SpawnVehiclePussywagon
-  components:
-  - pos: 7.5,-12.5
     parent: 127
     type: Transform
 - uid: 2921
@@ -33529,32 +32625,6 @@ entities:
     pos: 65.5,-28.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 3587
   type: AirlockExternalGlass
   components:
@@ -36923,209 +35993,6 @@ entities:
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 4126
-  type: BlastDoor
-  components:
-  - pos: -7.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 4135
-    type: SignalReceiver
-- uid: 4127
-  type: BlastDoor
-  components:
-  - pos: -5.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 4136
-    type: SignalReceiver
-- uid: 4128
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -7.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
-- uid: 4129
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -6.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
-- uid: 4130
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -5.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
-- uid: 4131
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -4.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
-- uid: 4132
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -3.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
-- uid: 4133
-  type: Recycler
-  components:
-  - rot: 1.5707963267948966 rad
-    pos: -3.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 6874
-      Forward:
-      - port: Left
-        uid: 6874
-      Off:
-      - port: Middle
-        uid: 6874
-    type: SignalReceiver
-- uid: 4134
-  type: TwoWayLever
-  components:
-  - pos: -4.5,-25.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 4131
-      - port: Forward
-        uid: 4132
-      - port: Forward
-        uid: 4130
-      - port: Forward
-        uid: 4129
-      - port: Forward
-        uid: 4128
-      - port: Forward
-        uid: 7841
-      Right:
-      - port: Reverse
-        uid: 4131
-      - port: Reverse
-        uid: 4132
-      - port: Reverse
-        uid: 4130
-      - port: Reverse
-        uid: 4129
-      - port: Reverse
-        uid: 4128
-      - port: Reverse
-        uid: 7841
-      Middle:
-      - port: Off
-        uid: 4131
-      - port: Off
-        uid: 4132
-      - port: Off
-        uid: 4130
-      - port: Off
-        uid: 4129
-      - port: Off
-        uid: 4128
-      - port: Off
-        uid: 7841
-    type: SignalTransmitter
-- uid: 4135
-  type: SignalButton
-  components:
-  - pos: -6.4161186,-25.751783
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 4126
-    type: SignalTransmitter
-- uid: 4136
-  type: SignalButton
-  components:
-  - pos: -6.1817436,-25.751783
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 4127
-    type: SignalTransmitter
 - uid: 4137
   type: WindoorSecure
   components:
@@ -39620,128 +38487,24 @@ entities:
   - pos: 9.5,-40.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 4541
   type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - pos: 11.5,-40.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 4542
   type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - pos: 17.5,-40.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 4543
   type: AirlockExternalGlassShuttleEmergencyLocked
   components:
   - pos: 19.5,-40.5
     parent: 127
     type: Transform
-  - fixtures:
-    - density: 100
-      shape: !type:PolygonShape
-        vertices:
-        - 0.49,-0.49
-        - 0.49,0.49
-        - -0.49,0.49
-        - -0.49,-0.49
-      mask:
-      - Impassable
-      - MidImpassable
-      - HighImpassable
-      - LowImpassable
-      - InteractImpassable
-      layer:
-      - MidImpassable
-      - HighImpassable
-      - BulletImpassable
-      - InteractImpassable
-      - Opaque
-    - shape: !type:PhysShapeCircle
-        position: 0,-0.5
-        radius: 0.2
-      hard: False
-      id: docking
-    type: Fixtures
 - uid: 4544
   type: AtmosDeviceFanTiny
   components:
@@ -44112,14 +42875,14 @@ entities:
     parent: 127
     type: Transform
 - uid: 5189
-  type: WindoorSecurityLocked
+  type: WindoorSecureSecurityLocked
   components:
   - rot: -1.5707963267948966 rad
     pos: 26.5,-22.5
     parent: 127
     type: Transform
 - uid: 5190
-  type: WindoorSecurityLocked
+  type: WindoorSecureSecurityLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 29.5,-22.5
@@ -45109,12 +43872,6 @@ entities:
   - pos: 44.5,-20.5
     parent: 127
     type: Transform
-- uid: 5311
-  type: SpawnVehicleSecway
-  components:
-  - pos: 36.5,-18.5
-    parent: 127
-    type: Transform
 - uid: 5312
   type: GasPipeStraight
   components:
@@ -45230,18 +43987,6 @@ entities:
   - pos: 42.5,-20.5
     parent: 127
     type: Transform
-- uid: 5326
-  type: SpawnVehicleSecway
-  components:
-  - pos: 37.5,-18.5
-    parent: 127
-    type: Transform
-- uid: 5327
-  type: VehicleKeySecway
-  components:
-  - pos: 44.22184,-20.156595
-    parent: 127
-    type: Transform
 - uid: 5328
   type: Table
   components:
@@ -45252,12 +43997,6 @@ entities:
   type: Table
   components:
   - pos: 39.5,-21.5
-    parent: 127
-    type: Transform
-- uid: 5330
-  type: VehicleKeySecway
-  components:
-  - pos: 44.081215,-20.26597
     parent: 127
     type: Transform
 - uid: 5331
@@ -51866,7 +50605,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 6216
-  type: WindoorEngineeringLocked
+  type: WindoorSecureEngineeringLocked
   components:
   - rot: 3.141592653589793 rad
     pos: 25.5,3.5
@@ -52230,19 +50969,6 @@ entities:
     type: Transform
   - color: '#990000FF'
     type: AtmosPipeColor
-- uid: 6265
-  type: SignalButton
-  components:
-  - name: Armory Blast Door
-    type: MetaData
-  - pos: 26.5,-15.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 6554
-    type: SignalTransmitter
 - uid: 6266
   type: ClothingOuterHardsuitSecurity
   components:
@@ -52324,19 +51050,6 @@ entities:
   - pos: 32.5,-17.5
     parent: 127
     type: Transform
-- uid: 6278
-  type: SignalButton
-  components:
-  - name: Armory Blast Door
-    type: MetaData
-  - pos: 35.5,-16.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 6554
-    type: SignalTransmitter
 - uid: 6279
   type: CableApcExtension
   components:
@@ -54154,21 +52867,6 @@ entities:
   - pos: 44.502003,-19.65017
     parent: 127
     type: Transform
-- uid: 6554
-  type: BlastDoor
-  components:
-  - pos: 38.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6278
-      - port: Pressed
-        uid: 6265
-    type: SignalReceiver
 - uid: 6555
   type: WaterTankFull
   components:
@@ -54642,348 +53340,6 @@ entities:
     type: Transform
   - color: '#0055CCFF'
     type: AtmosPipeColor
-- uid: 6615
-  type: ShuttersNormal
-  components:
-  - pos: 24.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -88790.84
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6634
-    type: SignalReceiver
-- uid: 6616
-  type: ShuttersNormal
-  components:
-  - pos: 24.5,-4.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -88790.84
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6634
-    type: SignalReceiver
-- uid: 6617
-  type: ShuttersNormal
-  components:
-  - pos: 24.5,-7.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -88790.84
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6634
-    type: SignalReceiver
-- uid: 6618
-  type: ShuttersWindow
-  components:
-  - pos: 24.5,-6.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -88790.84
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6634
-    type: SignalReceiver
-- uid: 6619
-  type: SignalButton
-  components:
-  - rot: 3.141592653589793 rad
-    pos: 12.132873,-8.18521
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 6629
-      - port: Toggle
-        uid: 6628
-      - port: Toggle
-        uid: 6626
-      - port: Toggle
-        uid: 6620
-      - port: Toggle
-        uid: 6621
-      - port: Toggle
-        uid: 6622
-      - port: Toggle
-        uid: 6623
-      - port: Toggle
-        uid: 6624
-      - port: Toggle
-        uid: 6625
-      - port: Toggle
-        uid: 6627
-      - port: Toggle
-        uid: 6631
-      - port: Toggle
-        uid: 6630
-    type: SignalTransmitter
-- uid: 6620
-  type: ShuttersNormal
-  components:
-  - pos: 13.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6621
-  type: ShuttersNormal
-  components:
-  - pos: 14.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6622
-  type: ShuttersNormal
-  components:
-  - pos: 15.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6623
-  type: ShuttersNormal
-  components:
-  - pos: 16.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6624
-  type: ShuttersNormal
-  components:
-  - pos: 17.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6625
-  type: ShuttersNormal
-  components:
-  - pos: 18.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6626
-  type: ShuttersWindow
-  components:
-  - pos: 12.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6627
-  type: ShuttersWindow
-  components:
-  - pos: 19.5,-5.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6628
-  type: ShuttersNormal
-  components:
-  - pos: 11.5,-6.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6629
-  type: ShuttersNormal
-  components:
-  - pos: 11.5,-7.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6630
-  type: ShuttersNormal
-  components:
-  - pos: 20.5,-6.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6631
-  type: ShuttersNormal
-  components:
-  - pos: 20.5,-7.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89841.72
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6619
-    type: SignalReceiver
-- uid: 6632
-  type: ShuttersNormal
-  components:
-  - pos: 20.5,-9.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89757.12
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6644
-    type: SignalReceiver
-- uid: 6633
-  type: ShuttersNormal
-  components:
-  - pos: 20.5,-11.5
-    parent: 127
-    type: Transform
-  - SecondsUntilStateChange: -89757.12
-    state: Opening
-    type: Door
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 6644
-    type: SignalReceiver
-- uid: 6634
-  type: SignalButton
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: 28.224934,-6.5914598
-    parent: 127
-    type: Transform
-  - state: True
-    type: SignalSwitch
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 6617
-      - port: Toggle
-        uid: 6618
-      - port: Toggle
-        uid: 6615
-      - port: Toggle
-        uid: 6616
-    type: SignalTransmitter
 - uid: 6635
   type: FirelockGlass
   components:
@@ -55045,22 +53401,6 @@ entities:
     pos: 49.5,-21.5
     parent: 127
     type: Transform
-- uid: 6644
-  type: SignalButton
-  components:
-  - rot: 3.141592653589793 rad
-    pos: 18.944899,-12.169585
-    parent: 127
-    type: Transform
-  - state: True
-    type: SignalSwitch
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 6633
-      - port: Toggle
-        uid: 6632
-    type: SignalTransmitter
 - uid: 6645
   type: Table
   components:
@@ -56867,23 +55207,6 @@ entities:
   - pos: 35.5,-5.5
     parent: 127
     type: Transform
-- uid: 6874
-  type: TwoWayLever
-  components:
-  - pos: -4.5,-23.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Left:
-      - port: Forward
-        uid: 4133
-      Right:
-      - port: Reverse
-        uid: 4133
-      Middle:
-      - port: Off
-        uid: 4133
-    type: SignalTransmitter
 - uid: 6875
   type: DisposalJunction
   components:
@@ -60304,14 +58627,6 @@ entities:
   - pos: 64.5,-35.5
     parent: 127
     type: Transform
-- uid: 7357
-  type: ClothingHandsGlovesIhscombat
-  components:
-  - name: IMC combat gloves
-    type: MetaData
-  - pos: -10.5,-12.5
-    parent: 127
-    type: Transform
 - uid: 7358
   type: GasPipeStraight
   components:
@@ -60611,13 +58926,13 @@ entities:
     parent: 127
     type: Transform
 - uid: 7407
-  type: WindoorBrigLocked
+  type: WindoorSecureBrigLocked
   components:
   - pos: 26.5,-32.5
     parent: 127
     type: Transform
 - uid: 7408
-  type: WindoorSecurityLocked
+  type: WindoorSecureSecurityLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 28.5,-28.5
@@ -63583,144 +61898,6 @@ entities:
   - pos: 57.53507,-32.568096
     parent: 127
     type: Transform
-- uid: 7783
-  type: ShuttersNormalOpen
-  components:
-  - pos: 24.5,-21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7791
-    type: SignalReceiver
-- uid: 7784
-  type: ShuttersNormalOpen
-  components:
-  - pos: 25.5,-21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7791
-    type: SignalReceiver
-- uid: 7785
-  type: ShuttersNormalOpen
-  components:
-  - pos: 23.5,-22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7791
-    type: SignalReceiver
-- uid: 7786
-  type: ShuttersNormalOpen
-  components:
-  - pos: 23.5,-23.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7791
-    type: SignalReceiver
-- uid: 7787
-  type: ShuttersNormalOpen
-  components:
-  - pos: 30.5,-21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7792
-    type: SignalReceiver
-- uid: 7788
-  type: ShuttersNormalOpen
-  components:
-  - pos: 31.5,-21.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7792
-    type: SignalReceiver
-- uid: 7789
-  type: ShuttersNormalOpen
-  components:
-  - pos: 32.5,-22.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7792
-    type: SignalReceiver
-- uid: 7790
-  type: ShuttersNormalOpen
-  components:
-  - pos: 32.5,-23.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 7792
-    type: SignalReceiver
-- uid: 7791
-  type: SignalButton
-  components:
-  - pos: 26.5,-21.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 7784
-      - port: Toggle
-        uid: 7783
-      - port: Toggle
-        uid: 7785
-      - port: Toggle
-        uid: 7786
-    type: SignalTransmitter
-- uid: 7792
-  type: SignalButton
-  components:
-  - pos: 29.5,-21.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 7787
-      - port: Toggle
-        uid: 7788
-      - port: Toggle
-        uid: 7789
-      - port: Toggle
-        uid: 7790
-    type: SignalTransmitter
 - uid: 7793
   type: GrilleBroken
   components:
@@ -64028,24 +62205,6 @@ entities:
   - pos: 57.48456,-40.694157
     parent: 127
     type: Transform
-- uid: 7841
-  type: ConveyorBelt
-  components:
-  - rot: -1.5707963267948966 rad
-    pos: -8.5,-24.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Reverse:
-      - port: Right
-        uid: 4134
-      Forward:
-      - port: Left
-        uid: 4134
-      Off:
-      - port: Middle
-        uid: 4134
-    type: SignalReceiver
 - uid: 7842
   type: FirelockGlass
   components:
@@ -65632,19 +63791,6 @@ entities:
   - pos: 48.5,10.5
     parent: 127
     type: Transform
-- uid: 8065
-  type: BlastDoor
-  components:
-  - pos: 41.5,26.5
-    parent: 127
-    type: Transform
-  - inputs:
-      Open: []
-      Close: []
-      Toggle:
-      - port: Pressed
-        uid: 8101
-    type: SignalReceiver
 - uid: 8066
   type: Poweredlight
   components:
@@ -65938,17 +64084,6 @@ entities:
   - pos: 24.5,16.5
     parent: 127
     type: Transform
-- uid: 8101
-  type: SignalButton
-  components:
-  - pos: 42.5,21.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 8065
-    type: SignalTransmitter
 - uid: 8102
   type: Grille
   components:
@@ -66006,15 +64141,6 @@ entities:
     type: Transform
   - canCollide: False
     type: Physics
-- uid: 8110
-  type: IHSVoidsuit
-  components:
-  - desc: A special pilot's suit that protects against hazardous, low pressure environments.
-    name: IMC pilotsuit
-    type: MetaData
-  - pos: -22.46431,1.6337702
-    parent: 127
-    type: Transform
 - uid: 8111
   type: FoodDonutJellySpaceman
   components:
@@ -67772,19 +65898,6 @@ entities:
     type: Transform
   - powerLoad: 0
     type: ApcPowerReceiver
-- uid: 8362
-  type: GrilleBroken
-  components:
-  - pos: -22.5,14.5
-    parent: 127
-    type: Transform
-  - outputs:
-      Pressed:
-      - port: Toggle
-        uid: 5704
-      - port: Toggle
-        uid: 8111
-    type: SignalTransmitter
 - uid: 8363
   type: Grille
   components:
@@ -70128,7 +68241,7 @@ entities:
     parent: 127
     type: Transform
 - uid: 8724
-  type: WindoorCommandLocked
+  type: WindoorSecureCommandLocked
   components:
   - rot: 1.5707963267948966 rad
     pos: 24.5,-5.5

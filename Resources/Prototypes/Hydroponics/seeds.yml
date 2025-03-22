@@ -1176,6 +1176,10 @@
       Min: 1
       Max: 20
       PotencyDivisor: 5
+    Morphine:
+      Min: 1
+      Max: 3
+      PotencyDivisor: 5
 
 - type: seed
   id: aloe

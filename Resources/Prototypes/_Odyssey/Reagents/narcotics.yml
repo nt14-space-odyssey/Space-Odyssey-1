@@ -39,8 +39,7 @@
           min: 30
         damage:
           types:
-            Poison: 1 # this is added to the base damage of the meth.
-            Asphyxiation: 1
+            Poison: 3
     Narcotic:
       effects:
       - !type:MovespeedModifier
@@ -72,12 +71,6 @@
         conditions:
         - !type:ReagentThreshold
           min: 20
-    Poison:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Poison: 3
 
 - type: reagent
   id: Morphine

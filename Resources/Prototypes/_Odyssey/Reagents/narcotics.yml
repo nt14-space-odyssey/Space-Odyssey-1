@@ -44,8 +44,8 @@
     Narcotic:
       effects:
       - !type:MovespeedModifier
-        walkSpeedModifier: 1.75
-        sprintSpeedModifier: 1.75
+        walkSpeedModifier: 1.5
+        sprintSpeedModifier: 1.5
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent

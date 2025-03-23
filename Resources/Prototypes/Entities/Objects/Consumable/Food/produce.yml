@@ -1448,12 +1448,14 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 22
+        maxVol: 25
         reagents:
         - ReagentId: Nutriment
           Quantity: 2
         - ReagentId: Bicaridine
-          Quantity: 20
+          Quantity: 18
+        - ReagentId: Morphine
+          Quantity: 5
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/poppy.rsi
   - type: Produce

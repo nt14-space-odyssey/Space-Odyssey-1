@@ -1179,3 +1179,12 @@
   components:
   - type: Sprite
     state: originmap
+
+- type: entity
+  parent: PosterBase
+  id: PosterSpaceOdyssey
+  name: "Poster space odyssey"
+  description: "poster space odyssey"
+  components:
+  - type: Sprite
+    state: space_odyssey

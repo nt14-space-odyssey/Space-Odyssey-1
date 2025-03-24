@@ -74,9 +74,9 @@
 
 - type: reagent
   id: Morphine
-  name: Морфин
+  name: "Морфин"
   group: Narcotics
-  desc: Сильное обезболивающее, ранее называемое морфий.
+  desc: "Сильное обезболивающее, ранее называемое морфий."
   physicalDesc: reagent-physical-desc-crystalline
   color: "#bdc8db"
   plantMetabolism:
@@ -106,9 +106,9 @@
 
 - type: reagent
   id: Heroine
-  name: Героин
+  name: "Героин"
   group: Narcotics
-  desc: Сильнейший наркотик во всей галактике!
+  desc: "Сильнейший наркотик во всей галактике!"
   physicalDesc: reagent-physical-desc-opaque
   color: "#FAFAFA"
   plantMetabolism:

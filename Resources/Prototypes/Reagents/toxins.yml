@@ -328,28 +328,6 @@
             Airloss: 15
 
 - type: reagent
-  id: MindbreakerToxin
-  name: reagent-name-mindbreaker-toxin
-  group: Toxins
-  desc: reagent-desc-mindbreaker-toxin
-  physicalDesc: reagent-physical-desc-opaque
-  flavor: bitter
-  color: "#77b58e"
-  plantMetabolism:
-  - !type:PlantAdjustToxins
-    amount: 10
-  metabolisms:
-    Poison:
-      effects:
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
-        component: SeeingRainbows
-        type: Add
-        time: 10
-        refresh: false
-  # TODO: PROPER hallucinations
-
-- type: reagent
   id: Histamine
   name: reagent-name-histamine
   group: Toxins

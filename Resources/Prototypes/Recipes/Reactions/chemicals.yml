@@ -297,11 +297,11 @@
   impact: Medium
   minTemp: 370
   reactants:
+    Morphine:
+      amount: 1
+    SpaceDrugs:
+      amount: 1
     Ephedrine:
-      amount: 1
-    Carbon:
-      amount: 1
-    Iodine:
       amount: 1
     Phosphorus:
      amount: 1
@@ -515,3 +515,14 @@
       amount: 1
   products:
     Tazinide: 1
+
+- type: reaction
+  id: Heroine
+  impact: Medium
+  reactants:
+    Morphine:
+      amount: 1
+    SpaceDrugs:
+      amount: 1
+  products:
+    Heroine: 1

@@ -7,7 +7,6 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
-  - MinerProfession # Odyssey-changes
 
 - type: department
   id: Civilian

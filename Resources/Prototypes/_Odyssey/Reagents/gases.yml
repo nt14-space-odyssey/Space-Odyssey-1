@@ -23,7 +23,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: BZ
-          min: 0.5
+          min: 1
         - !type:OrganType
           type: Slime
           shouldHave: false
@@ -31,8 +31,8 @@
         ignoreResistances: true
         damage:
           types:
-            Asphyxiation: 10
-            Poison: 2.5
+            Asphyxiation: 4.5
+            Poison: 0.5
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold

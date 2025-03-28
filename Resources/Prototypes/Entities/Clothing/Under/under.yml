@@ -22,3 +22,14 @@
     sprite: Clothing/Under/Socks/coder.rsi
   - type: Clothing
     sprite: Clothing/Under/Socks/coder.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksMedic
+  name: medical socks
+  description: To warm the feet of your favorite patients..
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/medicalsocks.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/medicalsocks.rsi

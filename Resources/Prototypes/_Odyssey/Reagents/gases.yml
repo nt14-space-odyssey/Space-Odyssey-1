@@ -31,8 +31,7 @@
         ignoreResistances: true
         damage:
           types:
-            Asphyxiation: 4.5
-            Poison: 0.5
+            Poison: 7.5
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
